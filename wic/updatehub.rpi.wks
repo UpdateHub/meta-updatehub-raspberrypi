@@ -1,0 +1,7 @@
+part /boot --source bootimg-partition --ondisk mmcblk --fstype=vfat --label boot --active --align 4096 --size 20
+part / --source rootfs --ondisk mmcblk --fstype=ext4 --label system  --align 8192 --extra-space 200
+part / --source rootfs --ondisk mmcblk --fstype=ext4 --label system  --align 8192 --extra-space 200
+
+part /data --ondisk mmcblk --fstype=ext4 --label data --size 16M --align 8192 --extra-space 0
+
+bootloader --ptable msdos
