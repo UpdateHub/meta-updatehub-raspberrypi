@@ -1,3 +1,4 @@
+LABEL=boot           /boot/env            vfat       defaults              1  0
 LABEL=system         /                    auto       defaults              1  1
 proc                 /proc                proc       defaults              0  0
 devpts               /dev/pts             devpts     mode=0620,gid=5       0  0
