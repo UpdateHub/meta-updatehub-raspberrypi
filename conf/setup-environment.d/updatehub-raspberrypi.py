@@ -3,6 +3,7 @@ def __after_init_updatehub_raspberrypi():
 
     append_layers([ os.path.join(PLATFORM_ROOT_DIR, 'sources', p) for p in
                     [
+                        'meta-raspberrypi',
                         'meta-updatehub-raspberrypi',
                     ]])
 
