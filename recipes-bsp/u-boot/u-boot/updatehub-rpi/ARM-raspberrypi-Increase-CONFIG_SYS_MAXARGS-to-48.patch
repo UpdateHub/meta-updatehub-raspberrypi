@@ -1,0 +1,26 @@
+From 6df61ed4a26a079524230a7b364493f4c68e20e5 Mon Sep 17 00:00:00 2001
+From: Fabio Berton <fabio.berton@ossystems.com.br>
+Date: Wed, 1 Apr 2020 15:55:12 -0300
+Subject: [PATCH] ARM: raspberrypi: Increase CONFIG_SYS_MAXARGS to 48
+Organization: O.S. Systems Software LTDA.
+
+Signed-off-by: Fabio Berton <fabio.berton@ossystems.com.br>
+---
+ include/configs/rpi.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/include/configs/rpi.h b/include/configs/rpi.h
+index 83e258a6b9..b80352accd 100644
+--- a/include/configs/rpi.h
++++ b/include/configs/rpi.h
+@@ -76,6 +76,7 @@
+ 
+ /* Console configuration */
+ #define CONFIG_SYS_CBSIZE		1024
++#define CONFIG_SYS_MAXARGS		48
+ 
+ /* Environment */
+ #define CONFIG_SYS_LOAD_ADDR		0x1000000
+-- 
+2.26.0
+
